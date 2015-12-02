@@ -75,7 +75,7 @@ public class TrieAgain {
      * returns LETTERGRID at (x, y) or ' ' if out of bounds
      */
     static char get(int x, int y) {
-        if (x > 0 && y > 0 && x < 4 && y < 4) {
+        if (x >= 0 && y >= 0 && x < 4 && y < 4) {
             return LETTERGRID[x][y];
         } else {
             return ' ';
